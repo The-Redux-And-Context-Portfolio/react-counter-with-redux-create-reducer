@@ -4,7 +4,10 @@ import { createReducer } from "@reduxjs/toolkit";
 /* app imports */
 import { counterReset, counterIncrement, coutnerDecrement } from "../actions/counter";
 
-/* reducer */
+/**
+  * createReducer - is a redux toolkit method that helps create a reducer function. this is one level (less abstracted) 
+  * than the createSlice method in redux toolkit
+  */
 const initialState = 0;
 const counterReducer = createReducer(initialState, (builder) => {
   builder
